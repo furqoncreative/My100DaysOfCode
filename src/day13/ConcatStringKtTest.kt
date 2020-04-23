@@ -20,6 +20,7 @@ class ConcatStringKtTest {
     @Test
     fun fixedTest() {
         assertEquals("ice1000", concatString("ice", "1000"))
+        assertEquals("Marhaban Ya Ramadhan", concatString("Marhaban ", "Ya Ramadhan"))
     }
 
     @Test
