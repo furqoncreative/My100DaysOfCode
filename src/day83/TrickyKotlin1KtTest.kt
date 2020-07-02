@@ -1,12 +1,11 @@
 package day83
 
-import org.junit.Assert.*
 import org.junit.Test
 import java.io.File
 import java.util.*
 import kotlin.test.assertEquals
 
-class TrickyKotlin1KtTest{
+class TrickyKotlin1KtTest {
     @Test
     fun testString() {
         assertEquals<String>("wow, I am the argument!", "this is a string, invoke it!"("wow, I am the argument!"))
@@ -28,6 +27,8 @@ class TrickyKotlin1KtTest{
     @Test
     fun testFile() {
         val r = Random(System.currentTimeMillis())
-        (0..100).forEach { r.nextLong().let { assertEquals<File>(File(it.toString()), "oh come on!"(File(it.toString()))) } }
+        (0..100).forEach {
+            r.nextLong().let { assertEquals<File>(File(it.toString()), "oh come on!"(File(it.toString()))) }
+        }
     }
 }
